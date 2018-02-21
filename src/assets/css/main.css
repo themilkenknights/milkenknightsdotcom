@@ -3150,3 +3150,195 @@
 			}
 
 	}
+
+
+
+	/*CSS code for the edge-2-edge custom slideshow http://46.101.81.60*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pic-wrapper {
+  position: relative;
+  width: 100%;
+  height: 150px;  /*Here you can change the height of the slideshow*/
+  overflow: hidden;
+}
+
+figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /*animation*/
+
+  animation: slideShow 12s linear infinite 0s;
+  -o-animation: slideShow 12s linear infinite 0s;
+  -moz-animation: slideShow 12s linear infinite 0s;
+  -webkit-animation: slideShow 12s linear infinite 0s;
+}
+
+figurecaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+}
+
+/******Your images section******/
+
+.pic-1 {
+  opacity: 1;
+  background: url(../../images/sponsors/1.png) no-repeat center center; /*Replace the image link with your own image link*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-2 {
+  animation-delay: 3s;
+  -o-animation-delay: 3s;
+  -moz--animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  background: url(../../images/sponsors/2.png) no-repeat center center;  /*Replace the image link with your own image link*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-3 {
+  animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -moz--animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+  background: url(../../images/sponsors/3.gif) no-repeat center center;  /*Replace the image link with your own image link*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-4 {
+  animation-delay: 9s;
+  -o-animation-delay: 9s;
+  -moz--animation-delay: 9s;
+  -webkit-animation-delay: 9s;
+  background: url(../../images/sponsors/4.png) no-repeat center center;  /*Replace the image link with your own image link*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-5 {
+  animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -moz--animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+  background: url(../../images/sponsors/5.png) no-repeat center center;  /*Replace the image link with your own image link*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*If you have added more than 5 images just copy the CSS for one of the images and change the .pic-5 to .pic-6 and so on*/
+
+
+/* keyframes*/
+
+@keyframes
+slideShow {  0% {
+ opacity: 0;
+ transform:scale(1);
+ -ms-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ transform:scale(1.1);
+ -ms-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ transform:scale(1);
+ -ms-transformm:scale(1);
+}
+}
+ @-o-keyframes
+slideShow {  0% {
+ opacity: 0;
+ -o-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ -o-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ -o-transformm:scale(1);
+}
+}
+ @-moz-keyframes
+slideShow {  0% {
+ opacity: 0;
+ -moz-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ -moz-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ -moz-transformm:scale(1);
+}
+}
+ @-webkit-keyframes
+slideShow {  0% {
+ opacity: 0;
+ -webkit-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ -webkit-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transformm:scale(1);
+}
+
+/*Mobile support*/
+@media screen and (max-width: 670px) {
+  .pic-wrapper {
+    height: 250px !important;  /*You can adjust the size that will appear on mobile by changing this px value*/
+}
+}
