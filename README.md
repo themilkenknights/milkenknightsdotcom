@@ -1,6 +1,6 @@
 # Utalization
 * This site will evntually replace [milkenknights.com](http://milkenknights.com). 
-* There is currently a live demo [here](http://jaredhasenklein.github.io/milkenknightsdotcom).
+* There is currently a live demo [here](http://milken-computer-science.github.io/milkenknightsdotcom).
 
 # Helpful things to know
 * Sponsors pull from SmugMug (can't be edited directly here)
