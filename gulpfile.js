@@ -6,7 +6,7 @@ var concat = require("gulp-concat");
 var imagemin = require('gulp-imagemin');
 
 gulp.task('copy', function() {
-  gulp.src('src/**')
+  gulp.src('src/**/*')
     .pipe(gulp.dest('docs'));
 });
 
@@ -51,4 +51,4 @@ gulp.task("compress-images", function() {
 });
 
 
-gulp.task("default", ["copy", "minify-html", "merge-minify-js-css", "compress-images"]);
+gulp.task("default", ["copy","minify-html", "merge-minify-js-css", "compress-images"]);
