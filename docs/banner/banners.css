@@ -32,7 +32,7 @@
     margin: 0 3px 30px;
     width: 120px;
     position: relative;
-    background: #0f4bcb;
+    background: #34345c;
     color: white;
     padding: 10px;
     white-space: normal
@@ -47,7 +47,7 @@
     content: '';
     position: absolute;
     display: block;
-    border: 60px solid #0f4bcb;
+    border: 60px solid #34345c;
     border-top-width: 5px;
     border-bottom: 20px transparent solid;
     top: 100%;
