@@ -5,6 +5,13 @@ script:
   - gulp
   - echo "Deploying!"
 install:
-  - npm install
+  - npm install -g firebase-tools
+  - npm install -g gulp
+  - npm install -g gulp-cli
+  - npm install -g gulp-minify-html
+  - npm install -g gulp-minify-css
+  - npm install -g gulp-uglify
+  - npm install -g gulp-concat
+  - npm install -g gulp-imagemin
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
