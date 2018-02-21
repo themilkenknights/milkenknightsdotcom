@@ -30,7 +30,7 @@
     vertical-align: top;
     display: inline-block;
     margin: 0 3px 30px;
-    width: 120px;
+    width: 500px;
     position: relative;
     background: #34345c;
     color: white;
@@ -39,7 +39,7 @@
 }
 .banners img,
 .banner img {
-    width: 75px;
+    width: 250px;
     margin-bottom: 5px;
 }
 .banners li:after,
