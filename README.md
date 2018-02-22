@@ -3,7 +3,6 @@
 * There is currently a live demo [here](https://milkenknightsdotcom.firebaseapp.com).
 
 # Helpful things to know
-* Sponsors pull from SmugMug (can't be edited directly here)
 * Seperate CSS is used for the /robots director
 * Files ending "-sidebar" are demos
 
