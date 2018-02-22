@@ -7,4 +7,4 @@ script:
   - echo "Deploying!"
   - firebase deploy --token $FIREBASE_TOKEN
 after_success:
-  - echo "Success!"
+  - echo "Success"
