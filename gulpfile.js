@@ -10,22 +10,22 @@ var fs = require('fs');
 
 gulp.task('copy', function() {
   gulp.src('src/**/*')
-    .pipe(gulp.dest('docs'));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task("minify-html", function() {
   gulp.src("src/**/*.html")
     .pipe(minifyHtml())
-    .pipe(gulp.dest('docs'));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task("merge-minify-js-css", function() {
   gulp.src("src/assets/js/*.js")
     .pipe(uglify())
-    .pipe(gulp.dest("docs/assets/js"));
+    .pipe(gulp.dest("dist/assets/js"));
   gulp.src("src/assets/css/*.css")
     .pipe(minifyCss())
-    .pipe(gulp.dest("docs/assets/css"));
+    .pipe(gulp.dest("dist/assets/css"));
 });
 
 gulp.task("compress-images", function() {
@@ -54,7 +54,7 @@ gulp.task("compress-images", function() {
         ]
       })
     ]))
-    .pipe(gulp.dest('docs/images'))
+    .pipe(gulp.dest('dist/images'))
 });
 
 
@@ -72,7 +72,7 @@ var FAVICON_DATA_FILE = 'faviconData.json';
 gulp.task('generate-favicon', function(done) {
   realFavicon.generateFavicon({
     masterPicture: 'src/images/logo.png',
-    dest: 'docs',
+    dest: 'dist/images/icons',
     iconsPath: '/images/icons',
     design: {
       ios: {
