@@ -11,6 +11,8 @@ install:
   - npm install -g gulp-uglify
   - npm install -g gulp-concat
   - npm install -g gulp-imagemin
+  - npm install -g imagemin-pngquant
+  - npm install -g imagemin-mozjpeg
 after_success:
   - gulp
   - firebase deploy --token $FIREBASE_TOKEN
