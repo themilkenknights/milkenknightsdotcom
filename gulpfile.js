@@ -85,7 +85,7 @@ gulp.task('generate-favicon', function(done) {
           precomposedIcons: false,
           declareOnlyDefaultIcon: true
         },
-        appName: 'The MilkenKnights'
+        appName: 'MilkenKnights'
       },
       desktopBrowser: {},
       windows: {
@@ -101,7 +101,7 @@ gulp.task('generate-favicon', function(done) {
             rectangle: false
           }
         },
-        appName: 'The MilkenKnights'
+        appName: 'MilkenKnights'
       },
       androidChrome: {
         pictureAspect: 'noChange',
