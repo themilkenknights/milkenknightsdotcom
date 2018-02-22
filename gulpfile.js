@@ -5,7 +5,6 @@ var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
 var imagemin = require('gulp-imagemin');
 var imageminPngquant = require('imagemin-pngquant');
-var imageminMozjpeg = require('imagemin-mozjpeg');
 
 gulp.task('copy', function() {
   gulp.src('src/**/*')
@@ -30,12 +29,8 @@ gulp.task("merge-minify-js-css", function() {
 gulp.task("compress-images", function() {
   gulp.src('src/images/*')
     .pipe(imagemin([
-
       imageminPngquant({
         speed: 1,
-        quality: 50
-      }),
-      imageminMozjpeg({
         quality: 50
       }),
       imagemin.gifsicle({
