@@ -33,10 +33,10 @@ gulp.task("compress-images", function() {
 
       imageminPngquant({
         speed: 1,
-        quality: 98
+        quality: 50
       }),
       imageminMozjpeg({
-        quality: 90
+        quality: 50
       }),
       imagemin.gifsicle({
         interlaced: true
