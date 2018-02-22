@@ -1,8 +1,6 @@
 language: node_js
 node_js:
  - "8"
-script:
-  - echo "Deploying!"
 install:
   - npm install -g firebase-tools
   - npm install -g gulp
@@ -13,6 +11,9 @@ install:
   - npm install -g gulp-imagemin
   - npm install -g imagemin-pngquant
   - npm install -g imagemin-mozjpeg
-after_success:
+script:
   - gulp
+  - echo "Deploying!"
   - firebase deploy --token $FIREBASE_TOKEN
+after_success:
+  - echo "Success!"
