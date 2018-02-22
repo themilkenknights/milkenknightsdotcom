@@ -12,6 +12,7 @@ install:
   - npm install -g gulp-imagemin
   - npm install -g imagemin-pngquant
   - npm install -g imagemin-mozjpeg
+  - npm install
 script:
   - gulp
   - echo "Deploying!"
