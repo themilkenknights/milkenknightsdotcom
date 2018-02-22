@@ -51,7 +51,7 @@
 				$(
 					'<div id="titleBar">' +
 						'<a href="#navPanel" class="toggle"></a>' +
-						'<span class="title">' + 'Milken Knights' + '</span>' +
+						'<span class="title">' + 'Team 1836: The MilkenKnights' + '</span>' +
 					'</div>'
 				)
 					.appendTo($body);
