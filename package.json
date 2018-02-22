@@ -4,7 +4,7 @@
   "description": "* This site will evntually replace [milkenknights.com](http://milkenknights.com).  * There is currently a live demo [here](https://milkenknightsdotcom.firebaseapp.com).",
   "main": "gulpfile.js",
   "directories": {
-    "doc": "docs"
+    "doc": "dist"
   },
   "dependencies": {
     "firebase": "^4.10.0",
@@ -16,7 +16,9 @@
     "gulp-uglify": "^3.0.0",
     "imagemin-pngquant": "^5.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-real-favicon": "^0.2.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
