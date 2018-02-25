@@ -1,6 +1,4 @@
-# Utalization
-* This site will evntually replace [milkenknights.com](http://milkenknights.com). 
-* There is currently a live demo [here](https://milkenknightsdotcom.firebaseapp.com).
+Currently live at milkenknights.com
 
 # Helpful things to know
 * Seperate CSS is used for the /robots director
