@@ -57,20 +57,23 @@ gulp.task("compress-images", function() {
     .pipe(gulp.dest('dist/images'))
 
 
-    gulp.src('src/robots/images/*')
+    gulp.src('src/robots/images/**/*')
     .pipe(imagemin([
       imageminPngquant({
         speed: 1,
-        quality: 50
+        quality: 10
       }),
       imagemin.gifsicle({
-        interlaced: true
+        interlaced: true,
+        optimizationLevel: 3,
+        number: 64
       }),
       imagemin.jpegtran({
-        progressive: true
+        progressive: true,
+        arithmetic: true
       }),
       imagemin.optipng({
-        optimizationLevel: 5
+        optimizationLevel: 7
       }),
       imagemin.svgo({
         plugins: [{
