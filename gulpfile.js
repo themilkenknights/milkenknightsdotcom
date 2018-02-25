@@ -3,10 +3,9 @@ var minifyHtml = require("gulp-minify-html");
 var minifyCss = require("gulp-minify-css");
 var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
-var imagemin = require('gulp-imagemin');
-var imageminPngquant = require('imagemin-pngquant');
 var realFavicon = require('gulp-real-favicon');
 var fs = require('fs');
+var image = require('gulp-image');
 
 gulp.task('copy', function() {
   gulp.src('src/**/*')
@@ -30,61 +29,44 @@ gulp.task("merge-minify-js-css", function() {
 
 gulp.task("compress-images", function() {
   gulp.src('src/images/*')
-    .pipe(imagemin([
-      imageminPngquant({
-        speed: 1,
-        quality: 50
-      }),
-      imagemin.gifsicle({
-        interlaced: true
-      }),
-      imagemin.jpegtran({
-        progressive: true
-      }),
-      imagemin.optipng({
-        optimizationLevel: 5
-      }),
-      imagemin.svgo({
-        plugins: [{
-            removeViewBox: true
-          },
-          {
-            cleanupIDs: false
-          }
-        ]
-      })
-    ]))
+  .pipe(image({
+    pngquant: true,
+    optipng: false,
+    zopflipng: true,
+    jpegRecompress: false,
+    mozjpeg: true,
+    guetzli: false,
+    gifsicle: true,
+    svgo: true,
+    concurrent: 10,
+    quiet: false
+  }))
     .pipe(gulp.dest('dist/images'))
 
 
     gulp.src('src/robots/images/**/*')
-    .pipe(imagemin([
-      imageminPngquant({
-        speed: 1,
-        quality: 10
-      }),
-      imagemin.gifsicle({
-        interlaced: true,
-        optimizationLevel: 3,
-        number: 64
-      }),
-      imagemin.jpegtran({
-        progressive: true,
-        arithmetic: true
-      }),
-      imagemin.optipng({
-        optimizationLevel: 7
-      }),
-      imagemin.svgo({
-        plugins: [{
-            removeViewBox: true
-          },
-          {
-            cleanupIDs: false
-          }
-        ]
-      })
-    ]))
+    .pipe(image({
+      pngquant: true,
+      optipng: true,
+      zopflipng: true,
+      jpegRecompress: true,
+      mozjpeg: true,
+      guetzli: false,
+      gifsicle: true,
+      svgo: true,
+      concurrent: 10,
+      quiet: false, 
+      options: {
+        optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
+        pngquant: ['--speed=1', '--force', 256],
+        zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
+        jpegRecompress: ['--strip', '--quality', 'medium', '--min', 40, '--max', 80],
+        mozjpeg: ['-optimize', '-progressive'],
+        guetzli: ['--quality', 85],
+        gifsicle: ['--optimize'],
+        svgo: ['--enable', 'cleanupIDs', '--disable', 'convertColors']
+      }
+    }))
     .pipe(gulp.dest('dist/robots/images'))
 });
 
