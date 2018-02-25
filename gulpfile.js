@@ -58,11 +58,11 @@ gulp.task("compress-images", function() {
       quiet: false, 
       options: {
         optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
-        pngquant: ['--speed=1', '--force', 256],
+        pngquant: ['--speed=1', '--force', 128],
         zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
-        jpegRecompress: ['--strip', '--quality', 'medium', '--min', 40, '--max', 80],
+        jpegRecompress: ['--strip', '--quality', 'medium', '--min', 20, '--max', 40],
         mozjpeg: ['-optimize', '-progressive'],
-        guetzli: ['--quality', 85],
+        guetzli: ['--quality', 40],
         gifsicle: ['--optimize'],
         svgo: ['--enable', 'cleanupIDs', '--disable', 'convertColors']
       }
