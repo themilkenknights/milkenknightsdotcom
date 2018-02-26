@@ -55,17 +55,7 @@ gulp.task("compress-images", function() {
       gifsicle: true,
       svgo: true,
       concurrent: 10,
-      quiet: false, 
-      options: {
-        optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
-        pngquant: ['--speed=1', '--force', 128],
-        zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
-        jpegRecompress: ['--strip', '--quality', 'medium', '--min', 20, '--max', 40],
-        mozjpeg: ['-optimize', '-progressive'],
-        guetzli: ['--quality', 40],
-        gifsicle: ['--optimize'],
-        svgo: ['--enable', 'cleanupIDs', '--disable', 'convertColors']
-      }
+      quiet: false
     }))
     .pipe(gulp.dest('dist/robots/images'))
 });
