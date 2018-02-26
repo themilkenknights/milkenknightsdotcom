@@ -40,7 +40,17 @@ gulp.task("compress-images", function () {
       gifsicle: true,
       svgo: true,
       concurrent: 10,
-      quiet: false
+      quiet: false,
+      options: {
+        optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
+        pngquant: ['--speed=1', '--force', 256],
+        zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
+        jpegRecompress: ['--strip', '--quality', 'medium', '--min', 40, '--max', 80],
+        mozjpeg: ['-optimize', '-progressive'],
+        guetzli: ['--quality', 85],
+        gifsicle: ['--optimize'],
+        svgo: ['--enable', 'cleanupIDs', '--disable', 'convertColors']
+      }
     }))
     .pipe(webp({
       quality: 80,
@@ -175,4 +185,4 @@ gulp.task('check-for-favicon-update', function (done) {
 
 
 
-gulp.task("default", ["copy", "generate-favicon", "minify-html", "merge-minify-js-css", "compress-images"]);
+gulp.task("default", ["copy", "generate-favicon", "minify-html", "merge-minify-js-css"]);
