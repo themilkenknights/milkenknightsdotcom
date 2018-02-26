@@ -9,7 +9,7 @@ var image = require('gulp-image');
 var webp = require('gulp-webp');
 
 gulp.task('copy', function () {
-  gulp.src('src/**/*')
+  gulp.src(['src/**/*', '!src/images/**/*', '!src/robots/images/**/*'])
     .pipe(gulp.dest('dist'));
 });
 
@@ -52,11 +52,6 @@ gulp.task("compress-images", function () {
         svgo: ['--enable', 'cleanupIDs', '--disable', 'convertColors']
       }
     }))
-    .pipe(webp({
-      quality: 80,
-      preset: 'photo',
-      method: 6
-    }))
     .pipe(gulp.dest('dist/images'))
 
 
@@ -71,12 +66,17 @@ gulp.task("compress-images", function () {
       gifsicle: true,
       svgo: true,
       concurrent: 10,
-      quiet: false
-    }))
-    .pipe(webp({
-      quality: 80,
-      preset: 'photo',
-      method: 6
+      quiet: false,
+      options: {
+        optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
+        pngquant: ['--speed=1', '--force', 256],
+        zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
+        jpegRecompress: ['--strip', '--quality', 'medium', '--min', 40, '--max', 80],
+        mozjpeg: ['-optimize', '-progressive'],
+        guetzli: ['--quality', 85],
+        gifsicle: ['--optimize'],
+        svgo: ['--enable', 'cleanupIDs', '--disable', 'convertColors']
+      }
     }))
     .pipe(gulp.dest('dist/robots/images'))
 });
