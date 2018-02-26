@@ -6,19 +6,20 @@ var concat = require("gulp-concat");
 var realFavicon = require('gulp-real-favicon');
 var fs = require('fs');
 var image = require('gulp-image');
+var webp = require('gulp-webp');
 
-gulp.task('copy', function() {
+gulp.task('copy', function () {
   gulp.src('src/**/*')
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task("minify-html", function() {
+gulp.task("minify-html", function () {
   gulp.src("src/**/*.html")
     .pipe(minifyHtml())
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task("merge-minify-js-css", function() {
+gulp.task("merge-minify-js-css", function () {
   gulp.src("src/assets/js/*.js")
     .pipe(uglify())
     .pipe(gulp.dest("dist/assets/js"));
@@ -27,35 +28,45 @@ gulp.task("merge-minify-js-css", function() {
     .pipe(gulp.dest("dist/assets/css"));
 });
 
-gulp.task("compress-images", function() {
+gulp.task("compress-images", function () {
   gulp.src('src/images/*')
-  .pipe(image({
-    pngquant: true,
-    optipng: false,
-    zopflipng: true,
-    jpegRecompress: false,
-    mozjpeg: true,
-    guetzli: false,
-    gifsicle: true,
-    svgo: true,
-    concurrent: 10,
-    quiet: false
-  }))
+    .pipe(image({
+      pngquant: true,
+      optipng: false,
+      zopflipng: true,
+      jpegRecompress: false,
+      mozjpeg: true,
+      guetzli: true,
+      gifsicle: true,
+      svgo: true,
+      concurrent: 10,
+      quiet: false
+    }))
+    .pipe(webp({
+      quality: 80,
+      preset: 'photo',
+      method: 6
+    }))
     .pipe(gulp.dest('dist/images'))
 
 
-    gulp.src('src/robots/images/**/*')
+  gulp.src('src/robots/images/**/*')
     .pipe(image({
       pngquant: true,
       optipng: true,
       zopflipng: true,
       jpegRecompress: true,
       mozjpeg: true,
-      guetzli: false,
+      guetzli: true,
       gifsicle: true,
       svgo: true,
       concurrent: 10,
       quiet: false
+    }))
+    .pipe(webp({
+      quality: 80,
+      preset: 'photo',
+      method: 6
     }))
     .pipe(gulp.dest('dist/robots/images'))
 });
@@ -72,7 +83,7 @@ var FAVICON_DATA_FILE = 'faviconData.json';
 // You should run it at least once to create the icons. Then,
 // you should run it whenever RealFaviconGenerator updates its
 // package (see the check-for-favicon-update task below).
-gulp.task('generate-favicon', function(done) {
+gulp.task('generate-favicon', function (done) {
   realFavicon.generateFavicon({
     masterPicture: 'src/images/logo.png',
     dest: 'dist/images/icons',
@@ -135,7 +146,7 @@ gulp.task('generate-favicon', function(done) {
       usePathAsIs: false
     },
     markupFile: FAVICON_DATA_FILE
-  }, function() {
+  }, function () {
     done();
   });
 });
@@ -143,7 +154,7 @@ gulp.task('generate-favicon', function(done) {
 // Inject the favicon markups in your HTML pages. You should run
 // this task whenever you modify a page. You can keep this task
 // as is or refactor your existing HTML pipeline.
-gulp.task('inject-favicon-markups', function() {
+gulp.task('inject-favicon-markups', function () {
   return gulp.src(['TODO: List of the HTML files where to inject favicon markups'])
     .pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
     .pipe(gulp.dest('TODO: Path to the directory where to store the HTML files'));
@@ -153,9 +164,9 @@ gulp.task('inject-favicon-markups', function() {
 // released a new Touch icon along with the latest version of iOS).
 // Run this task from time to time. Ideally, make it part of your
 // continuous integration system.
-gulp.task('check-for-favicon-update', function(done) {
+gulp.task('check-for-favicon-update', function (done) {
   var currentVersion = JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).version;
-  realFavicon.checkForUpdates(currentVersion, function(err) {
+  realFavicon.checkForUpdates(currentVersion, function (err) {
     if (err) {
       throw err;
     }
