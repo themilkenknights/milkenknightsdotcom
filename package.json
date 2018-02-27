@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "gulp-image": "^4.3.0",
-    "gulp-real-favicon": "^0.2.2",
     "gulp-webp": "^3.0.0",
     "staticrypt": "^1.2.0"
   },
