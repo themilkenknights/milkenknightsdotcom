@@ -9,6 +9,7 @@ install:
 script:
   - npm install
   - gulp
+  - staticrypt -f dist/password_template.html -o dist/protected.html dist/protected.html jared
   - echo "Deploying!"
   - firebase deploy --token $FIREBASE_TOKEN
 after_success:
