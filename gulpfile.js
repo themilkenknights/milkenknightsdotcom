@@ -4,7 +4,6 @@ var minifyCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var fs = require('fs');
-var image = require('gulp-image');
 var webp = require('gulp-webp');
 var template = require('gulp-template-html');
 var runSequence = require('run-sequence');
