@@ -8,18 +8,20 @@
   },
   "dependencies": {
     "firebase": "^4.10.0",
-    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-uglify": "^3.0.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
     "gulp-image": "^4.3.0",
     "gulp-minify-html": "^1.0.6",
     "gulp-template-html": "^0.2.0",
     "gulp-webp": "^3.0.0",
     "run-sequence": "^2.2.1",
-    "staticrypt": "^1.2.0"
+    "staticrypt": "^1.2.0",
+    "superstatic": "^5.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
