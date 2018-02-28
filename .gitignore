@@ -113,6 +113,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
+.vscode/
+.idea/
 
 # End of https://www.gitignore.io/api/web,node,macos,windows

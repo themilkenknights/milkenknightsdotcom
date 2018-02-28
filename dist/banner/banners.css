@@ -6,6 +6,7 @@
     src: url('adam.otf') format('opentype');
     unicode-range: U+0000-00FF;
 }
+
 /* To be standard-compliant, this rule should be applied to *, but for compat it's restricted here. */
 .banners,
 .banners *,
@@ -14,14 +15,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .banner-parent {
     width: 100%;
     overflow: scroll;
 }
+
 .banner-parent .banners {
     width: auto;
     white-space: nowrap;
 }
+
 .banners li,
 .banner {
     line-height: 1.2;
@@ -37,11 +41,13 @@
     padding: 10px;
     white-space: normal
 }
+
 .banners img,
 .banner img {
     width: 250px;
     margin-bottom: 5px;
 }
+
 .banners li:after,
 .banner:after {
     content: '';
@@ -53,6 +59,7 @@
     top: 100%;
     left: 0;
 }
+
 .banners li,
 .banners li:after,
 .banner,
@@ -60,5 +67,5 @@
     -webkit-filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1));
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="5" /><feOffset dx="1" dy="11" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
     -webkit-filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1));
-            filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1));
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1));
 }
