@@ -132,7 +132,7 @@ gulp.task('serve', ['reload'], function() {
 
 gulp.task('default', function(callback) {
   runSequence(
-      'copy', 'template-html', 'minify-html', 'merge-minify-js-css',
+      'copy', 'template-html', 'minify-html', 'merge-minify-js-css', 'generate-service-worker',
       callback);
 });
 
@@ -140,4 +140,14 @@ gulp.task('reload', function(callback) {
   runSequence(
       'copy', 'template-html',
       callback);
+});
+
+gulp.task('generate-service-worker', function(callback) {
+  var swPrecache = require('sw-precache');
+  var rootDir = 'dist';
+
+  swPrecache.write(`${rootDir}/service-worker.js`, {
+    staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
+    stripPrefix: rootDir
+  }, callback);
 });
