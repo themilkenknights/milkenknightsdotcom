@@ -1,4 +1,7 @@
-Currently live at milkenknights.com
+# MilkenKnights.com
+Currently live at [milkenknights.com](https://milkenknights.com)
+
+[![Build Status](https://api.travis-ci.org/Milken-Computer-Science/milkenknightsdotcom.svg?branch=master)](https://api.travis-ci.org/Milken-Computer-Science/milkenknightsdotcom)
 
 # Helpful things to know
 * Seperate CSS is used for the /robots director
