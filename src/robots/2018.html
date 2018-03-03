@@ -320,5 +320,26 @@
   gtag('js', new Date());
   gtag('config', 'UA-114717904-1');
 </script>
+	<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "267372156783", // Facebook page ID
+            email: "jhasenklein@gmail.com", // Email
+            sms: "+1-818-439-2892", // Sms phone number
+            company_logo_url: "//storage.whatshelp.io/widget/5e/5e31/5e319d71c01d6fcece65291b2a0528d4/13413774_10153448193231784_3754788074797685920_n.png", // URL of company logo (png, jpg, gif)
+            greeting_message: "Have scouting or other questions for us? Contact us here and we'll get back to you as soon as we can.", // Text of greeting message
+            call_to_action: "Ask us questions", // Call to action
+            button_color: "#129BF4", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "facebook,sms,email" // Order of buttons
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
 </body>
 </html>
