@@ -1,5 +1,4 @@
 # MilkenKnights.com
-https://travis-ci.org/Milken-Computer-Science/milkenknightsdotcom.svg?branch=master
 Currently live at [milkenknights.com](https://milkenknights.com)
 
 [![Build Status](https://api.travis-ci.org/Milken-Computer-Science/milkenknightsdotcom.svg?branch=master)](https://api.travis-ci.org/Milken-Computer-Science/milkenknightsdotcom)
