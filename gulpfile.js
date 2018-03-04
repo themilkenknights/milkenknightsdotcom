@@ -28,6 +28,7 @@ gulp.task('template-html', function() {
     'dist/media.html',
     'dist/resources.html',
     'dist/thanks.html',
+    'dist/azscout.html',
   ]).pipe(template('src/template.html')).pipe(gulp.dest('dist'));
 });
 
