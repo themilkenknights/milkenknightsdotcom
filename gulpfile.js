@@ -130,12 +130,6 @@ gulp.task('serve', ['reload'], function() {
   gulp.watch('src/**/*', ['js-watch']);
 });
 
-gulp.task('default', function(callback) {
-  runSequence(
-      'copy', 'template-html', 'minify-html', 'merge-minify-js-css', 'generate-service-worker',
-      callback);
-});
-
 gulp.task('reload', function(callback) {
   runSequence(
       'copy', 'template-html',
@@ -150,4 +144,10 @@ gulp.task('generate-service-worker', function(callback) {
     staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
     stripPrefix: rootDir
   }, callback);
+});
+
+gulp.task('default', function(callback) {
+  runSequence(
+      'copy', 'template-html', 'minify-html', 'merge-minify-js-css', 'generate-service-worker',
+      callback);
 });
