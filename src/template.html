@@ -245,13 +245,6 @@ function sendMessage(message) {
     }
   });
 }
-document.querySelector('#clear-cache').addEventListener('click', function() {
-  sendMessage({command: 'delete_all'}).then(function() {
-    console.log('All caches deleted.');
-  }).catch(function(error) {
-    console.error('Caches not deleted:', error);
-  });
-});
 </script>
 </body>
 </html>
