@@ -132,17 +132,20 @@ gulp.task('serve', ['reload'], function() {
 
 gulp.task('reload', function(callback) {
   runSequence(
-      'copy', 'template-html',
+      'copy', 'template-html', 'generate-service-worker',
       callback);
 });
 
 gulp.task('generate-service-worker', function(callback) {
   var swPrecache = require('sw-precache');
-  var rootDir = 'dist';
+  var rootDir = 'dist/';
 
   swPrecache.write(`${rootDir}/service-worker.js`, {
-    staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
-    stripPrefix: rootDir
+    staticFileGlobs: [
+    rootDir + '/**/*'
+  ],
+    handleFetch: true,
+    stripPrefix: rootDir,
   }, callback);
 });
 
