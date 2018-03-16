@@ -151,7 +151,9 @@ gulp.task('generate-service-worker', function(callback) {
     rootDir + 'images/sponsors/*.{js,html,css,png,jpg,gif}',
     rootDir + 'icons/*.{js,html,css,png,jpg,gif}',
     rootDir + 'banner/*.{js,html,css,png,jpg,gif}',
-    rootDir + 'banner/images/*.{js,html,css,png,jpg,gif}'
+    rootDir + 'banner/images/*.{js,html,css,png,jpg,gif}',
+    rootDir + '!404.html'
+   
   ],
     handleFetch: true,
     stripPrefix: rootDir,
