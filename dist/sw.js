@@ -1,4 +1,4 @@
-importScripts('assets/js/workbox-sw.js');
+importScripts('assets/js/workbox/workbox-sw.js');
 
 if (workbox) {
     console.log(`Yay! Workbox is loaded 🎉`);
@@ -9,15 +9,15 @@ if (workbox) {
 workbox.precaching.precacheAndRoute([
   {
     "url": "404.html",
-    "revision": "0aa5bcd72418276d3a66bd4660678895"
+    "revision": "1f03b44e2d3ae9ced40b6f66bf3c25ab"
   },
   {
     "url": "about.html",
-    "revision": "4483e7afa3a250dd4992059f7267ae4d"
+    "revision": "5c382e897cfcf9162b79bf27722122c5"
   },
   {
     "url": "achievements.html",
-    "revision": "69f632071093efb6ffdac9710de9bb69"
+    "revision": "e24dd502f357d9c78f02fd8bd75fa476"
   },
   {
     "url": "assets/css/font-awesome.min.css",
@@ -77,11 +77,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/js/jquery.min.js",
-    "revision": "78beaec3c9e715fead1c89f96e76e21c"
+    "revision": "6910b2df4d1cc219b2f75cb610634958"
   },
   {
     "url": "assets/js/main.js",
     "revision": "e18ca556d551f2d1dd27f9f4e266581f"
+  },
+  {
+    "url": "assets/js/OLD_jquery.min.js",
+    "revision": "78beaec3c9e715fead1c89f96e76e21c"
   },
   {
     "url": "assets/js/skel.min.js",
@@ -89,15 +93,99 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/js/util.js",
-    "revision": "4c78ba810d3878d62c328e9ab62a4be4"
+    "revision": "e620d8b66b577cd585b8d2ad84afb34c"
   },
   {
     "url": "assets/js/workbox-sw.js",
     "revision": "93b96b567b054ba5d88cd79081f2e005"
   },
   {
+    "url": "assets/js/workbox/workbox-background-sync.dev.js",
+    "revision": "fe6774c22362ef1e34db105aae403617"
+  },
+  {
+    "url": "assets/js/workbox/workbox-background-sync.prod.js",
+    "revision": "9211e08e7e33b9881564cd9cf3402211"
+  },
+  {
+    "url": "assets/js/workbox/workbox-broadcast-cache-update.dev.js",
+    "revision": "8eb4344bc652fd3b135a4b678c2c557f"
+  },
+  {
+    "url": "assets/js/workbox/workbox-broadcast-cache-update.prod.js",
+    "revision": "296f00b3763d3f15393d78d91cb41be6"
+  },
+  {
+    "url": "assets/js/workbox/workbox-cache-expiration.dev.js",
+    "revision": "a4fb80f8ce617e9ef71fa5e019018a9e"
+  },
+  {
+    "url": "assets/js/workbox/workbox-cache-expiration.prod.js",
+    "revision": "c9e87b1a8c78ff60b86544874cc14892"
+  },
+  {
+    "url": "assets/js/workbox/workbox-cacheable-response.dev.js",
+    "revision": "5302fcb5ad1e831106b2564515a39a1c"
+  },
+  {
+    "url": "assets/js/workbox/workbox-cacheable-response.prod.js",
+    "revision": "2421c36226a8e1d70cf13a64c4b9aa0b"
+  },
+  {
+    "url": "assets/js/workbox/workbox-core.dev.js",
+    "revision": "4d61237e37ceef8494f7a56ae9f7cca9"
+  },
+  {
+    "url": "assets/js/workbox/workbox-core.prod.js",
+    "revision": "65e9fe4b5f0aac359cee12b34ecdcb59"
+  },
+  {
+    "url": "assets/js/workbox/workbox-google-analytics.dev.js",
+    "revision": "704ba152d7f0691c2e0192cc963af0cd"
+  },
+  {
+    "url": "assets/js/workbox/workbox-google-analytics.prod.js",
+    "revision": "c4ba61233ec54213dd09ef89bbdc53ff"
+  },
+  {
+    "url": "assets/js/workbox/workbox-precaching.dev.js",
+    "revision": "412b0f74a372166559d946a9b310e9dd"
+  },
+  {
+    "url": "assets/js/workbox/workbox-precaching.prod.js",
+    "revision": "92b8b761b81970e9beab93b6602a57c8"
+  },
+  {
+    "url": "assets/js/workbox/workbox-range-requests.dev.js",
+    "revision": "c4aa28a053c374e83682ca6fb96a8bf7"
+  },
+  {
+    "url": "assets/js/workbox/workbox-range-requests.prod.js",
+    "revision": "f51ab671547419c4fa4042b634af23f7"
+  },
+  {
+    "url": "assets/js/workbox/workbox-routing.dev.js",
+    "revision": "8c82a5df800f0b98aabe8811190fec4a"
+  },
+  {
+    "url": "assets/js/workbox/workbox-routing.prod.js",
+    "revision": "408061ddc88831aea02820c557411f91"
+  },
+  {
+    "url": "assets/js/workbox/workbox-strategies.dev.js",
+    "revision": "31997743c8928adcb0bc278917dc054a"
+  },
+  {
+    "url": "assets/js/workbox/workbox-strategies.prod.js",
+    "revision": "7e031ce45a8a0d5e30fc4577b3dd3457"
+  },
+  {
+    "url": "assets/js/workbox/workbox-sw.js",
+    "revision": "93b96b567b054ba5d88cd79081f2e005"
+  },
+  {
     "url": "azscout.html",
-    "revision": "e0d841ecf8ccd501172e0749987dedd5"
+    "revision": "9b4378e23591949028c5050bc93b080b"
   },
   {
     "url": "banner/banner.html",
@@ -121,11 +209,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "calendar.html",
-    "revision": "c6812452977ec7c851e753fc0d71062f"
+    "revision": "83e5d9db8c6dfca582a1113b1dd1ddea"
   },
   {
     "url": "downloads.html",
-    "revision": "d6e918a2f1ded4a0fce808c3827c8e0b"
+    "revision": "0ec419dbc2403aa4bc1169b61855c26e"
   },
   {
     "url": "icons/android-chrome-192x192.png",
@@ -373,11 +461,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "203bdc3897f9632849266669450b7160"
+    "revision": "79da642ef05826ab37512f47829d3b91"
   },
   {
     "url": "join.html",
-    "revision": "62ca1cf69b528e0a981251015800145d"
+    "revision": "6c2b3a5b168668fc6b4202f602540c10"
   },
   {
     "url": "left-sidebar.html",
@@ -385,11 +473,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "live.html",
-    "revision": "cf82b41121bd3ef62005747ad145c252"
+    "revision": "bb82ae83f17b580e8cc261ffc65e0d8f"
   },
   {
     "url": "media.html",
-    "revision": "f55a0ea98875fd1ccb0768de54dd6faa"
+    "revision": "11c2dc365b4429c1533f1915c4a287a8"
   },
   {
     "url": "password_template.html",
@@ -401,7 +489,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "resources.html",
-    "revision": "2f072fa5ba3291fb8763a8a4637742d7"
+    "revision": "23eaeed73b07f262fc2b6fd69abfac29"
   },
   {
     "url": "robots/2018.html",
@@ -509,11 +597,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "template.html",
-    "revision": "ceee9f51718ade245c53d90da9398068"
+    "revision": "308a4e75bab104160ce5aa184ac44112"
   },
   {
     "url": "thanks.html",
-    "revision": "c936c6267c2b159f4875be623c52b17c"
+    "revision": "cba55df26806aa145ccfe84b7768ea36"
   },
   {
     "url": "two-sidebar.html",
