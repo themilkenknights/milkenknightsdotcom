@@ -24,7 +24,7 @@
             "value": "max-age=0"
           }
         ]
-      }
+      },
       {
         "source": "**/*",
         "headers": [
