@@ -30,6 +30,7 @@ gulp.task('template-html', function () {
     'dist/resources.html',
     'dist/thanks.html',
     'dist/azscout.html',
+    'dist/ocscout.html',
   ]).pipe(template('src/template.html')).pipe(gulp.dest('dist'));
 });
 
