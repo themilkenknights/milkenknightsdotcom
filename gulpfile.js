@@ -9,13 +9,14 @@ var template = require('gulp-template-html');
 var runSequence = require('run-sequence');
 var browserSync = require('browser-sync').create();
 var superstatic = require('superstatic');
+var workboxBuild = require('workbox-build');
 
-gulp.task('copy', function() {
+gulp.task('copy', function () {
   return gulp.src(['src/**/*', '!src/images/**/*', '!src/robots/images/**/*']).
-      pipe(gulp.dest('dist'));
+  pipe(gulp.dest('dist'));
 });
 
-gulp.task('template-html', function() {
+gulp.task('template-html', function () {
   return gulp.src([
     'dist/index.html',
     'dist/404.html',
@@ -32,20 +33,20 @@ gulp.task('template-html', function() {
   ]).pipe(template('src/template.html')).pipe(gulp.dest('dist'));
 });
 
-gulp.task('minify-html', function() {
+gulp.task('minify-html', function () {
   return gulp.src('dist/**/*.html').pipe(minifyHtml()).pipe(gulp.dest('dist'));
 });
 
-gulp.task('merge-minify-js-css', function() {
-  gulp.src('src/assets/js/*.js').
-      pipe(uglify()).
-      pipe(gulp.dest('dist/assets/js'));
+gulp.task('merge-minify-js-css', function () {
+  gulp.src(['src/assets/js/*.js', '!src/assets/js/workbox-sw.js']).
+  pipe(uglify()).
+  pipe(gulp.dest('dist/assets/js'));
   return gulp.src('src/assets/css/*.css').
-      pipe(minifyCss()).
-      pipe(gulp.dest('dist/assets/css'));
+  pipe(minifyCss()).
+  pipe(gulp.dest('dist/assets/css'));
 });
 
-gulp.task('compress-images', function() {
+gulp.task('compress-images', function () {
   gulp.src('src/images/*').pipe(image({
     pngquant: true,
     optipng: false,
@@ -68,7 +69,8 @@ gulp.task('compress-images', function() {
         '--min',
         40,
         '--max',
-        80],
+        80
+      ],
       mozjpeg: ['-optimize', '-progressive'],
       guetzli: ['--quality', 85],
       gifsicle: ['--optimize'],
@@ -98,7 +100,8 @@ gulp.task('compress-images', function() {
         '--min',
         40,
         '--max',
-        80],
+        80
+      ],
       mozjpeg: ['-optimize', '-progressive'],
       guetzli: ['--quality', 85],
       gifsicle: ['--optimize'],
@@ -109,19 +112,21 @@ gulp.task('compress-images', function() {
 
 // create a task that ensures the `js` task is complete before
 // reloading browsers
-gulp.task('js-watch', ['reload'], function(done) {
+gulp.task('js-watch', ['reload'], function (done) {
   browserSync.reload();
   done();
 });
 
 // use default task to launch Browsersync and watch JS files
-gulp.task('serve', ['reload'], function() {
+gulp.task('serve', ['reload'], function () {
 
   // Serve files from the root of this project
   browserSync.init({
     server: {
       baseDir: 'dist/',
-      middleware: [superstatic({stack: 'strict'})]
+      middleware: [superstatic({
+        stack: 'strict'
+      })]
     },
   });
 
@@ -130,24 +135,25 @@ gulp.task('serve', ['reload'], function() {
   gulp.watch('src/**/*', ['js-watch']);
 });
 
-gulp.task('default', function(callback) {
+gulp.task('reload', function (callback) {
   runSequence(
-      'copy', 'template-html', 'minify-html', 'merge-minify-js-css', 'generate-service-worker',
-      callback);
+    'copy', 'template-html', 'service-worker',
+    callback);
 });
 
-gulp.task('reload', function(callback) {
-  runSequence(
-      'copy', 'template-html',
-      callback);
+gulp.task('service-worker', () => {
+  return workboxBuild.injectManifest({
+    swSrc: 'src/sw.js',
+    swDest: 'dist/sw.js',
+    globDirectory: 'dist',
+    globPatterns: [
+      '**\/*.{js,css,html,png,jpg,jpeg,gif,svg}',
+    ]
+  });
 });
 
-gulp.task('generate-service-worker', function(callback) {
-  var swPrecache = require('sw-precache');
-  var rootDir = 'dist';
-
-  swPrecache.write(`${rootDir}/service-worker.js`, {
-    staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
-    stripPrefix: rootDir
-  }, callback);
+gulp.task('default', function (callback) {
+  runSequence(
+    'copy', 'template-html', 'minify-html', 'merge-minify-js-css', 'service-worker',
+    callback);
 });

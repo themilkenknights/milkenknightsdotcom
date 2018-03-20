@@ -1,6 +1,6 @@
 {
     "name": "The MilkenKnights",
-    "short_name": "The MilkenKnights",
+    "short_name": "MilkenKnights",
     "icons": [
         {
             "src": "/images/icons/android-chrome-192x192.png",
@@ -13,7 +13,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#34345c",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "start_url": "/index"
 }
