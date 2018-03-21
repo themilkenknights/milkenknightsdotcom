@@ -93,7 +93,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/js/util.js",
-    "revision": "e620d8b66b577cd585b8d2ad84afb34c"
+    "revision": "d41d8cd98f00b204e9800998ecf8427e"
   },
   {
     "url": "assets/js/workbox-sw.js",
@@ -473,11 +473,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "live.html",
-    "revision": "2a650072353801be3e8f26ddbe533b39"
+    "revision": "22c7d62b5bd06a79ca89ad4164c42ce3"
   },
   {
     "url": "media.html",
     "revision": "f66663052ba24fc3d997d82073ef869f"
+  },
+  {
+    "url": "ocscout.html",
+    "revision": "990188a2c8b6cb3884b1a0cc3d48efb8"
   },
   {
     "url": "password_template.html",
@@ -598,6 +602,10 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "template.html",
     "revision": "9507cdd1d352353ea04a9f0df6374c37"
+  },
+  {
+    "url": "test.html",
+    "revision": "d83fd46a2b51eed2e993c9da2438550e"
   },
   {
     "url": "thanks.html",
