@@ -13,4 +13,9 @@ script:
   - echo "Deploying!"
   - firebase deploy --token $FIREBASE_TOKEN
 after_success:
+  - curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$ZONE/purge_cache" \
+     -H "X-Auth-Email: $AUTH_EMAIL" \
+     -H "X-Auth-Key: $AUTH_KEY" \
+     -H "Content-Type: application/json" \
+     --data '{"purge_everything":true}'
   - echo "Success"
