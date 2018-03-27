@@ -17,7 +17,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "achievements.html",
-    "revision": "6f9aff9f1219de209759d931c21623cf"
+    "revision": "fb2ba4e70b64a69246cf795cc8c1f5e9"
   },
   {
     "url": "assets/css/font-awesome.min.css",
@@ -461,7 +461,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "ca7f8d1251555031bf1abd9675832ca4"
+    "revision": "7a0b15dff2e7eb2ee4ab73fd1a685a2d"
   },
   {
     "url": "join.html",
@@ -473,7 +473,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "live.html",
-    "revision": "8c8bcb76dd2024c2b057e6c86dce0f6e"
+    "revision": "5bc633e9fa1b4039be164d488ec9b043"
   },
   {
     "url": "media.html",
@@ -481,7 +481,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "ocscout.html",
-    "revision": "eafdf33684150734edb3380c1c719924"
+    "revision": "2f1c3c661454f8c6b54f16a0d8b274fd"
   },
   {
     "url": "password_template.html",
@@ -489,7 +489,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "protected.html",
-    "revision": "d95bce22803bb3238cf88acf570a1bc9"
+    "revision": "41ab6f9eff4d4fae67e3d5f77e47356b"
   },
   {
     "url": "resources.html",
@@ -497,7 +497,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "robots/2018.html",
-    "revision": "96df3f7c3254984956107f3cdb992972"
+    "revision": "8a35fa940510a40b5541f0ee1456f0b2"
   },
   {
     "url": "robots/assets/css/font-awesome.min.css",
