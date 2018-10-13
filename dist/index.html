@@ -12,6 +12,8 @@
 	<meta charset="utf-8" />
 	<meta name="Description" content="Team 1836: The MilkenKnights">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:image" content="https://i.imgur.com/PgNHbGhh.png">
+	<meta property="og:description" content="FIRST Robotics Competition Team 1836: The MilkenKnights from Milken Community Schools in Los Angeles, California">
 	<!--[if lte IE 8]>
 	<script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -32,6 +34,7 @@
 	<meta name="msapplication-TileColor" content="#34345c">
 	<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -79,7 +82,7 @@
 			</nav>
 		</div>
 		
-<!-- <section id="livecta" class="wrapper style3">
+<section id="livecta" class="wrapper style3">
 <style>a.mklive:hover {
   color: #bababa ;
 }
@@ -87,13 +90,13 @@
 	<div class="container">
 		<header>
 			    <h2>We're live at <a class="mklive" href="live">milkenknights.com/live</h2></a>
-          <p><b>Orange County Regional</b>
-						&emsp;&emsp;&emsp;3.22.18 - 3.24.18
-						&emsp;&emsp;&emsp;Irvine, CA</p>
+          <p><b>Beach Blitz</b>
+						&emsp;&emsp;&emsp;10.12.18 - 10.14.18
+						&emsp;&emsp;&emsp;Huntington Beach, CA</p>
 			</div>
 		</header>
 	</div>
-</section> -->
+</section> 
 
 <section id="cta">
 	<header>
@@ -298,6 +301,7 @@
 					<section class="6u 12u(narrower)">
 						<h3>Get In Touch</h3>
 						<form action="https://formfarm.im/95099" method="POST">
+							<div class="g-recaptcha" data-sitekey="6LcvawcTAAAAAJ921c96oeiEDeucunvF0ylgv8P1"></div>
 							<input type="hidden" name="_next" value="thanks.html" />
 							<input type="text" name="_gotcha" style="display:none" />
 							<div class="row 50%">
@@ -388,11 +392,14 @@
 		gtag('config', 'UA-114717904-1');
 		// Check that service workers are registered
 		if ('serviceWorker' in navigator) {
-			// Use the window load event to keep the page load performant
-			window.addEventListener('load', () => {
-				navigator.serviceWorker.register('/sw.js');
-			});
-		}
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').then(registration => {
+        console.log('SW registered: ', registration);
+      }).catch(registrationError => {
+        console.log('SW registration failed: ', registrationError);
+      });
+    });
+  }
 	</script>
 </body>
 

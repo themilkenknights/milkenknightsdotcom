@@ -12,6 +12,8 @@
 	<meta charset="utf-8" />
 	<meta name="Description" content="Team 1836: The MilkenKnights">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:image" content="https://i.imgur.com/PgNHbGhh.png">
+	<meta property="og:description" content="FIRST Robotics Competition Team 1836: The MilkenKnights from Milken Community Schools in Los Angeles, California">
 	<!--[if lte IE 8]>
 	<script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -32,6 +34,7 @@
 	<meta name="msapplication-TileColor" content="#34345c">
 	<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -86,12 +89,80 @@
 				<header>
 					<h2>Happening Now</h2>
 				</header>
-			<p>We're offline right now. Check back during a competition or special event.
-				<p>You can follow us any time on
-			    <a href="http://facebook.com/TheMilkenKnights">Facebook</a>,
-			    <a href="http://instagram.com/milkenknights">Instagram</a>,
-			    <a href="http://twitter.com/milkenknights">Twitter</a>, and
-			    <a href="http://snapchat.com/add/milkenknights">Snapchat</a>.</p>
+				<div id="online">
+					<h3>Beach Blitz</h3>
+					<p>10.12.18 to 10.14.18 | Huntingon Beach, CA</p>
+					<p>You can follow us any time on
+						<a href="http://facebook.com/TheMilkenKnights">Facebook</a>,
+						<a href="http://instagram.com/milkenknights">Instagram</a>,
+						<a href="http://twitter.com/milkenknights">Twitter</a>, and
+						<a href="http://snapchat.com/add/milkenknights">Snapchat</a>.</p>
+					<section class="wrapper style1">
+						<div class="container">
+							<div class="row 200%">
+								<div class="6u 12u(narrower)">
+									<div id="sidebar">
+										<!-- Stream -->
+										<section>
+											<h4>Video stream</h4>
+											<iframe src="https://player.twitch.tv/?channel=robosportsnetwork" width="100%" height="500px"></iframe><a href="https://www.twitch.tv/robosportsnetwork?tt_content=text_link&tt_medium=live_embed">Watch live video from Robosportsnetwork on www.twitch.tv</a></p>
+											<footer>
+											</footer>
+										</section>
+									</div>
+								</div>
+								<div class="6u  12u(narrower) important(narrower)">
+									<div id="content">
+										<!-- Schedule/Main -->
+										<article>
+											<header>
+												<h4>Match Schedule & Results</h4>
+												<p><b>Qualifications & Eliminations</b>
+													<!--<br><br><b>Practice Schedule</b>-->
+													<style>
+														#comp-div {
+															width: 100%;
+															height: 500px;
+															/* Shrink this for fewer matches. Increase for more */
+															overflow: hidden;
+															position: relative;
+														}
+
+														#comp-iframe {
+															position: absolute;
+															top: -295px;
+															left: -602px;
+															right: 500px;
+															width: 1280px;
+															height: 1600px;
+														}
+													</style>
+													<style type="text/css">
+														#mobileshow {
+															display: none;
+														}
+
+														@media screen and (max-width: 500px) {
+															#mobileshow {
+																display: block;
+															}
+														}
+													</style>
+
+													<!-- CHANGE EVENT CODE IN ALL THREE PLACES -->
+													<!-- START SHCEDULE CODE...................................-->
+													<!-- <div id="mobileshow"> -->
+														<p><a href="http://thebluealliance.com/team/1836/2018#2018cabl" target="_blank">View our match results and schedule here. Click here to view in a new tab</a>.</p>
+												<!--	</div> -->
+													<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+												<!--<div id="comp-div">
+														<base target="_blank" /><iframe style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);" src="https://www.thebluealliance.com/team/1836/2018#2018cabl" id="comp-iframe" scrolling="no"></iframe>
+													</div> -->
+					</section>
+					</header>
+					<footer>
+						<p><a href="http://thebluealliance.com/team/1836/2018#2018cabl" class="button">More details on The Blue Alliance</a></p>
+					</footer>
 					</article>
 					</div>
 					</div>
@@ -134,6 +205,7 @@
 					<section class="6u 12u(narrower)">
 						<h3>Get In Touch</h3>
 						<form action="https://formfarm.im/95099" method="POST">
+							<div class="g-recaptcha" data-sitekey="6LcvawcTAAAAAJ921c96oeiEDeucunvF0ylgv8P1"></div>
 							<input type="hidden" name="_next" value="thanks.html" />
 							<input type="text" name="_gotcha" style="display:none" />
 							<div class="row 50%">
@@ -224,11 +296,14 @@
 		gtag('config', 'UA-114717904-1');
 		// Check that service workers are registered
 		if ('serviceWorker' in navigator) {
-			// Use the window load event to keep the page load performant
-			window.addEventListener('load', () => {
-				navigator.serviceWorker.register('/sw.js');
-			});
-		}
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').then(registration => {
+        console.log('SW registered: ', registration);
+      }).catch(registrationError => {
+        console.log('SW registration failed: ', registrationError);
+      });
+    });
+  }
 	</script>
 </body>
 
