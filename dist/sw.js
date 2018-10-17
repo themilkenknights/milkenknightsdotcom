@@ -17,7 +17,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "achievements.html",
-    "revision": "dc3b7c7f4819ae3f4fcbe52ed856a44a"
+    "revision": "639c56e5fcfcb1f73f36c5b1092f985b"
   },
   {
     "url": "assets/css/font-awesome.min.css",
