@@ -9,15 +9,15 @@ if (workbox) {
 workbox.precaching.precacheAndRoute([
   {
     "url": "404.html",
-    "revision": "f3880c4d4e4ac3006ca18b14c53629ae"
+    "revision": "cc3273d36c9a865000e0c79263a70a24"
   },
   {
     "url": "about.html",
-    "revision": "1505aff5c1b30467dd8d3e5f38fc4b18"
+    "revision": "d752fb025f9405eada2d077cc7994f19"
   },
   {
     "url": "achievements.html",
-    "revision": "b8810c71cae659a6ae9a647f56941b7e"
+    "revision": "dc3b7c7f4819ae3f4fcbe52ed856a44a"
   },
   {
     "url": "assets/css/font-awesome.min.css",
@@ -185,7 +185,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "azscout.html",
-    "revision": "1baa1aa976d9936674780fcd815d7fcc"
+    "revision": "6cf972d42ce40a747423849be9e5f2eb"
   },
   {
     "url": "banner/banner.html",
@@ -209,11 +209,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "calendar.html",
-    "revision": "05554cc96973eac7cf0232bbc4db7703"
+    "revision": "677f3efec41f47718a438faf2374e711"
   },
   {
     "url": "downloads.html",
-    "revision": "786dcbb78aca958e7cdea7a3da7e1df2"
+    "revision": "373eec0c47c33b247b71c842a730ffd7"
   },
   {
     "url": "icons/android-chrome-192x192.png",
@@ -461,11 +461,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "b6b01a74ec62ccf9801558da322ab5c1"
+    "revision": "aac8e46ec4617eef86bdf687c38147d2"
   },
   {
     "url": "join.html",
-    "revision": "8b3aa3df7fe46920fee0594661b7b7e6"
+    "revision": "47155e832a3ab9ff1357ebcaf8407557"
   },
   {
     "url": "left-sidebar.html",
@@ -473,15 +473,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "live.html",
-    "revision": "73531af2cdc2868b7f03af6d3bfa010f"
+    "revision": "0d1eb5184c9e75a76e8073cb5bddf98b"
   },
   {
     "url": "media.html",
-    "revision": "68da6bd3e61461e313ebd35a788aa7f4"
+    "revision": "d625ea8c46f6db68457b853044cd80ea"
   },
   {
     "url": "ocscout.html",
-    "revision": "36f8918c57df9ff930be47605dbb16e8"
+    "revision": "e746efbcd4090ded0f8a342c7f594766"
   },
   {
     "url": "password_template.html",
@@ -493,7 +493,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "resources.html",
-    "revision": "374d82f226da7867d4e740a4c7c7d0d2"
+    "revision": "58fc9640e1db9010dc5c958d26be4a3d"
   },
   {
     "url": "robots/2018.html",
@@ -601,7 +601,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "template.html",
-    "revision": "56db28de11a414d6eba78a3327b2f95e"
+    "revision": "0ddbbdd347be46a4c20abb8d0b8b83d9"
   },
   {
     "url": "test.html",
@@ -609,7 +609,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "thanks.html",
-    "revision": "2b61d63324a8a83f73c8e3adce3ad783"
+    "revision": "257d093adbd363b9ec3deffdd6034f5d"
   },
   {
     "url": "two-sidebar.html",

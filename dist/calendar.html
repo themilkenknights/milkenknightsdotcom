@@ -114,7 +114,7 @@
 								<a href="http://hub.jaredhk.com">Robotics Resource Hub</a>
 							</li>
 							<li>
-								<a href="mailto:jhasen-klein669@milkenschool.org">Email the webmaster</a>
+								<a href="mailto:aswerdlow935@milkenschool.org">Email the webmaster</a>
 							</li>
 						</ul>
 					</section>
@@ -127,7 +127,7 @@
 					</section>
 					<section class="6u 12u(narrower)">
 						<h3>Get In Touch</h3>
-						<form action="https://formfarm.im/95099" method="POST">
+						<form action="https://formfarm.im/95099" method="POST" id="custom-form">
 							<div class="g-recaptcha" data-sitekey="6LcvawcTAAAAAJ921c96oeiEDeucunvF0ylgv8P1"></div>
 							<input type="hidden" name="_next" value="thanks.html" />
 							<input type="text" name="_gotcha" style="display:none" />
@@ -208,6 +208,16 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114717904-1"></script>
 	<script>
+
+var form = document.getElementById('custom-form');
+form.addEventListener("submit", function(event){
+    if (grecaptcha.getResponse() === '') {                            
+      event.preventDefault();
+      alert('Please check the recaptcha');
+    }
+  }
+, false);
+
 		window.dataLayer = window.dataLayer || [];
 
 		function gtag() {
