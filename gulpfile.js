@@ -146,6 +146,11 @@ gulp.task('service-worker', () => {
   return workboxBuild.injectManifest({
     swSrc: 'src/sw.js',
     swDest: 'dist/sw.js',
+    templatedUrls: {
+    '/': [
+      'index.html',
+    ],
+  },
     globDirectory: 'dist',
     globPatterns: [
       '**\/*.{js,css,html,png,jpg,jpeg,gif,svg}',
