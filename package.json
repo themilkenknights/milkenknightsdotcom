@@ -7,7 +7,7 @@
     "doc": "dist"
   },
   "dependencies": {
-    "firebase": "^4.10.0",
+    "firebase": "^5.5.5",
     "gulp-cli": "^2.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-minify-css": "^1.2.4",
@@ -22,7 +22,6 @@
     "run-sequence": "^2.2.1",
     "staticrypt": "^1.2.0",
     "superstatic": "^5.0.1",
-    "sw-precache": "^5.2.1",
     "workbox-build": "^3.6.2"
   },
   "scripts": {
