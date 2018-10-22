@@ -23,7 +23,7 @@
     "staticrypt": "^1.2.0",
     "superstatic": "^5.0.1",
     "sw-precache": "^5.2.1",
-    "workbox-build": "^3.0.0"
+    "workbox-build": "^3.6.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
