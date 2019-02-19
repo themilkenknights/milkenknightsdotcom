@@ -61,6 +61,9 @@
 							<li>
 								<a href="join">Get Involved</a>
 							</li>
+							<li>
+								<a href="sponsors">Sponsors</a>
+							</li>
 						</ul>
 					</li>
 					<li>
@@ -195,7 +198,7 @@
 
 var form = document.getElementById('custom-form');
 form.addEventListener("submit", function(event){
-    if (grecaptcha.getResponse() === '') {                            
+    if (grecaptcha.getResponse() === '') {
       event.preventDefault();
       alert('Please check the recaptcha');
     }
