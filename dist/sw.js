@@ -9,23 +9,23 @@ if (workbox) {
 workbox.precaching.precacheAndRoute([
   {
     "url": "404.html",
-    "revision": "5eeba735f099349338ff08fe438c6a11"
+    "revision": "c5fd556edd4b5d97117c6e577534778e"
   },
   {
     "url": "about.html",
-    "revision": "536355b1432d6c818d5f0fdbff8589de"
+    "revision": "04edeb0ddea5da63d1682561b4b9519e"
   },
   {
     "url": "achievements.html",
-    "revision": "408c4c14c3e5c6b129e8f44050951a8c"
+    "revision": "4020547a88095d599c899daf719d7ec8"
   },
   {
     "url": "assets/css/font-awesome.min.css",
-    "revision": "346abc0338e97fcdf3e4b947b1f7eb25"
+    "revision": "01e957345fb05507c8b5f48973220c96"
   },
   {
     "url": "assets/css/ie8.css",
-    "revision": "dc752a9ce75c936f1f7a01d5e30c5f42"
+    "revision": "6549cc073000758ea320b86a9d487a21"
   },
   {
     "url": "assets/css/ie9.css",
@@ -49,7 +49,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/css/main.css",
-    "revision": "0bdc6dc06aab116e95ff76be4a7cddcd"
+    "revision": "085d86c5aa562cf41edf187eded806c1"
   },
   {
     "url": "assets/css/main1.css",
@@ -81,7 +81,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/js/main.js",
-    "revision": "d41d8cd98f00b204e9800998ecf8427e"
+    "revision": "8c1fe6a3f7223827ee80fa7ad188f98e"
   },
   {
     "url": "assets/js/OLD_jquery.min.js",
@@ -185,7 +185,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "azscout.html",
-    "revision": "d45bdf528aa338affc2178df87a064aa"
+    "revision": "900d0a42c90ab036baa7bc1b651c2698"
   },
   {
     "url": "banner/banner.html",
@@ -209,11 +209,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "calendar.html",
-    "revision": "606ea97909ea19725fcd3eaeb54f6c0b"
+    "revision": "90e7374ba5218efdb647eeccabd2be73"
   },
   {
     "url": "downloads.html",
-    "revision": "d122852a2f0801cafaa5b97e3d24312c"
+    "revision": "3ce8fca1bb7dfcb5c39b1446375f99e8"
   },
   {
     "url": "icons/android-chrome-192x192.png",
@@ -289,7 +289,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/banner.jpg",
-    "revision": "b248de02f7b6a4f34ca3bfeeb41caa82"
+    "revision": "8e16692779fc08b7362db382a0a61b8f"
   },
   {
     "url": "images/banner.png",
@@ -381,47 +381,59 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/sponsors/1.png",
-    "revision": "b10b8ec5be71e89103a6633eba7d87fa"
+    "revision": "ad834afdd96489fe0d28b9c1527db48b"
   },
   {
     "url": "images/sponsors/10.png",
-    "revision": "79accb32c88665f6b3dcda6d87cf4383"
+    "revision": "44cf4525d4ee742893991abaeaf5a1f0"
   },
   {
     "url": "images/sponsors/11.jpg",
-    "revision": "c71ce7efc310a4effa5cb9f76727f58d"
+    "revision": "eef2569796053999b5025dd7eb29d028"
   },
   {
     "url": "images/sponsors/12.png",
-    "revision": "292077068be525d1718aac2afe5fc004"
+    "revision": "df4787813e0ab0028b427bec2f60bcc6"
   },
   {
     "url": "images/sponsors/13.png",
-    "revision": "f3a6d035838d83ce8f2f97743655a4c9"
+    "revision": "8e49c7d80cb8808283e68e04039c7fb3"
   },
   {
     "url": "images/sponsors/14.png",
-    "revision": "e3a41751c23ecc98748df1b5e573783b"
+    "revision": "246b1070b369da9e4662ccbed8460a33"
   },
   {
     "url": "images/sponsors/15.png",
-    "revision": "6a808933d07fa40c610e7b59f019e1e2"
+    "revision": "a226978407dfec62a5687a1f35a7466b"
   },
   {
     "url": "images/sponsors/16.gif",
     "revision": "710c18b8b0bb33c11f7f3b0ea38ca195"
   },
   {
+    "url": "images/sponsors/16.png",
+    "revision": "b8c4e3f79a63a0cc2710ffa72d7cbb57"
+  },
+  {
     "url": "images/sponsors/17.gif",
     "revision": "b283b3a16608834bafcd731466d6e74a"
   },
   {
+    "url": "images/sponsors/17.jpg",
+    "revision": "585090a4624f99755e7e3204717b6416"
+  },
+  {
     "url": "images/sponsors/18.png",
-    "revision": "effbcbe5bdeb8e4f5dcff94c43ff9670"
+    "revision": "d5667f899c9db277a88d04fac49daf6c"
   },
   {
     "url": "images/sponsors/19.png",
-    "revision": "d2987fb7d1898e3ac6e3ee1cf99fa94c"
+    "revision": "3d3800d7f817c7a8fd3469e8c2c0df24"
+  },
+  {
+    "url": "images/sponsors/2.jpg",
+    "revision": "49c309d15af5906c55883138a50965ce"
   },
   {
     "url": "images/sponsors/2.png",
@@ -429,31 +441,31 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/sponsors/3.gif",
-    "revision": "1f61c48b8dce886b922356fe1c1f037d"
+    "revision": "3b807e325a6bdf63db67cecb06f5fd60"
   },
   {
     "url": "images/sponsors/4.png",
-    "revision": "aa35d358ed6f39233440c85c85510af4"
+    "revision": "1c9008fdb1d6bccf57e9a3d65297f656"
   },
   {
     "url": "images/sponsors/5.png",
-    "revision": "cec87913053f418763c11d9d543915c0"
+    "revision": "83e25da8631d746e2bb75976505f7110"
   },
   {
     "url": "images/sponsors/6.png",
-    "revision": "1773c15c1eb791bdb9dfb74b4d0d6817"
+    "revision": "b4219c1b7b4a2ae23d2a6cf2016ae368"
   },
   {
     "url": "images/sponsors/7.png",
-    "revision": "516ad3bd2a688a1ee66bc223b5fcf947"
+    "revision": "86474eded18d15d600300a1cd87092dc"
   },
   {
     "url": "images/sponsors/8.png",
-    "revision": "f4440a8bfc1b77d6e86e70512f0001ad"
+    "revision": "cf19a757586c705d70b5e16af7f024ba"
   },
   {
     "url": "images/sponsors/9.png",
-    "revision": "0ec6356cc99122018a8dc8d0d1b6d66c"
+    "revision": "6e71132b1c70021aa40b56f05dfa98ed"
   },
   {
     "url": "images/stream.png",
@@ -461,11 +473,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "3e5a8a6b549bfd1d7b3d385cdd3d806d"
+    "revision": "56e60a7987035dd488be6dcaa34b404f"
   },
   {
     "url": "join.html",
-    "revision": "26ae9a6210d1587753f2c72d88045c6e"
+    "revision": "f6b373f9beb314100ef6b2aecdba2139"
   },
   {
     "url": "left-sidebar.html",
@@ -473,15 +485,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "live.html",
-    "revision": "d53695831fd4c0e74568180f31cef7c6"
+    "revision": "7a9cc09e343479a3302281b7a5ab57dd"
   },
   {
     "url": "media.html",
-    "revision": "8330ab735a5dcbaa25f40311227fd8c1"
+    "revision": "1c4939d7c43978fa874ca5dc6a5e543f"
   },
   {
     "url": "ocscout.html",
-    "revision": "df76b8f2f500aae216814e62e04f7601"
+    "revision": "f56794236c8e868f117bc41d1151ea17"
   },
   {
     "url": "password_template.html",
@@ -493,7 +505,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "resources.html",
-    "revision": "41db58773b6db8550df4f463132de045"
+    "revision": "09025a5d9396ac000ddb33e8534feaac"
   },
   {
     "url": "robots/2018.html",
@@ -600,8 +612,12 @@ workbox.precaching.precacheAndRoute([
     "revision": "a72bad927d3cf500f152d46c5079208c"
   },
   {
+    "url": "sponsors.html",
+    "revision": "2723134dcb3eb3466c76099a70c5e067"
+  },
+  {
     "url": "template.html",
-    "revision": "8a690514e777fda11c4abeb420a4f4ba"
+    "revision": "05f58e79b466c27f6f447f81be6ea3d6"
   },
   {
     "url": "test.html",
@@ -609,7 +625,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "thanks.html",
-    "revision": "a5c5981432774d0e06e3115ebc50057c"
+    "revision": "7f590237342624cd06165472ede7fb7c"
   },
   {
     "url": "two-sidebar.html",
@@ -641,9 +657,9 @@ workbox.routing.registerRoute(
         plugins: [
             new workbox.expiration.Plugin({
                 // Cache only 20 images
-                maxEntries: 20,
-                // Cache for a maximum of a week
-                maxAgeSeconds: 7 * 24 * 60 * 60,
+                maxEntries: 100,
+                // Cache for a maximum of a day
+                maxAgeSeconds: 24 * 60 * 60,
             })
         ],
     })
