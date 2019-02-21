@@ -9,27 +9,27 @@ if (workbox) {
 workbox.precaching.precacheAndRoute([
   {
     "url": "404.html",
-    "revision": "c5fd556edd4b5d97117c6e577534778e"
+    "revision": "b8d80c2201ccfd5a52919fbea9d04535"
   },
   {
     "url": "about.html",
-    "revision": "04edeb0ddea5da63d1682561b4b9519e"
+    "revision": "c100bb878b81ed9d407917ee75649e75"
   },
   {
     "url": "achievements.html",
-    "revision": "4020547a88095d599c899daf719d7ec8"
+    "revision": "b69d33e0808ef6580a8a537d6b98aa6c"
   },
   {
     "url": "assets/css/font-awesome.min.css",
-    "revision": "01e957345fb05507c8b5f48973220c96"
+    "revision": "4083f5d376eb849a458cc790b53ba080"
   },
   {
     "url": "assets/css/ie8.css",
-    "revision": "6549cc073000758ea320b86a9d487a21"
+    "revision": "be4c8e8d6e19a29479ca0250e917203b"
   },
   {
     "url": "assets/css/ie9.css",
-    "revision": "d9e6bc2a169d14c2da32cf03f60b8b55"
+    "revision": "2bc31e67edfdff22bb6f24ac304d1cf0"
   },
   {
     "url": "assets/css/images/bg01.jpg",
@@ -49,7 +49,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/css/main.css",
-    "revision": "085d86c5aa562cf41edf187eded806c1"
+    "revision": "4dc9dfb1e2ed0f40d5884fb6a383bed1"
   },
   {
     "url": "assets/css/main1.css",
@@ -57,7 +57,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/css/sourcesanspro.css",
-    "revision": "1312db6dd0234bab10ceca26deb41ad3"
+    "revision": "da1811c83db09689b44f0acda3cf6ab7"
   },
   {
     "url": "assets/fonts/fontawesome-webfont.svg",
@@ -73,19 +73,19 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/js/jquery.dropotron.min.js",
-    "revision": "fcec3571d97951b626bc7b1b2bce79ca"
+    "revision": "19a18a4d6c0f6d063e932a316f18c626"
   },
   {
     "url": "assets/js/jquery.min.js",
-    "revision": "3221a143190e5e47874580cac9d26019"
+    "revision": "a09e13ee94d51c524b7e2a728c7d4039"
   },
   {
     "url": "assets/js/main.js",
-    "revision": "8c1fe6a3f7223827ee80fa7ad188f98e"
+    "revision": "1f7f748c26237f3af76408a24df9b4b2"
   },
   {
     "url": "assets/js/OLD_jquery.min.js",
-    "revision": "0409d0edd402a82e4447f416fea5c7fb"
+    "revision": "895323ed2f7258af4fae2c738c8aea49"
   },
   {
     "url": "assets/js/skel.min.js",
@@ -185,11 +185,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "azscout.html",
-    "revision": "900d0a42c90ab036baa7bc1b651c2698"
+    "revision": "b54174f47d419219b9908361860595e2"
   },
   {
     "url": "banner/banner.html",
-    "revision": "0a82ff1b8a1c171d647ad84d7940dd31"
+    "revision": "1991e133b437fdae77692e87d5225d70"
   },
   {
     "url": "banner/banners.css",
@@ -209,11 +209,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "calendar.html",
-    "revision": "90e7374ba5218efdb647eeccabd2be73"
+    "revision": "c0b2400800cfcccfff929ef8de1fc412"
   },
   {
     "url": "downloads.html",
-    "revision": "3ce8fca1bb7dfcb5c39b1446375f99e8"
+    "revision": "0939216236071cb2c9cc238098486c9e"
   },
   {
     "url": "icons/android-chrome-192x192.png",
@@ -381,7 +381,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/sponsors/1.png",
-    "revision": "ad834afdd96489fe0d28b9c1527db48b"
+    "revision": "81d3e1cba6bfd4ed37112f3b7ed11a86"
   },
   {
     "url": "images/sponsors/10.png",
@@ -473,43 +473,43 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "56e60a7987035dd488be6dcaa34b404f"
+    "revision": "3bfe13f33c04c41c3f6c8cddc4258490"
   },
   {
     "url": "join.html",
-    "revision": "f6b373f9beb314100ef6b2aecdba2139"
+    "revision": "ead361318ba8d724e999ad3a0d4941cd"
   },
   {
     "url": "left-sidebar.html",
-    "revision": "f8691e4f446c32a5a8db0484e7ca54e4"
+    "revision": "5de0c8a800afd119ae0439c854b3b909"
   },
   {
     "url": "live.html",
-    "revision": "7a9cc09e343479a3302281b7a5ab57dd"
+    "revision": "845879f57d5a54b746d82dd2d4f7bd71"
   },
   {
     "url": "media.html",
-    "revision": "1c4939d7c43978fa874ca5dc6a5e543f"
+    "revision": "71fe07e5a05ef2e880394c8d18faebf3"
   },
   {
     "url": "ocscout.html",
-    "revision": "f56794236c8e868f117bc41d1151ea17"
+    "revision": "d7e6a646b0c4fe54c60bba1a860a3db2"
   },
   {
     "url": "password_template.html",
-    "revision": "c871eb9441553b4c9c0aaa831d862697"
+    "revision": "0d71a2a8606dd259132557f40332f1c0"
   },
   {
     "url": "protected.html",
-    "revision": "f3b1025d7e9188e222529bef07735463"
+    "revision": "1db82d0041a586c0469ec826328efcd3"
   },
   {
     "url": "resources.html",
-    "revision": "09025a5d9396ac000ddb33e8534feaac"
+    "revision": "efac25fd04f3718467dd016cd322d082"
   },
   {
     "url": "robots/2018.html",
-    "revision": "98d973ae43e0a399db1195b88d3dab56"
+    "revision": "8a35fa940510a40b5541f0ee1456f0b2"
   },
   {
     "url": "robots/assets/css/font-awesome.min.css",
@@ -613,23 +613,23 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "sponsors.html",
-    "revision": "2723134dcb3eb3466c76099a70c5e067"
+    "revision": "e0fa9fcea039a582c4ce2b5262d7510e"
   },
   {
     "url": "template.html",
-    "revision": "05f58e79b466c27f6f447f81be6ea3d6"
+    "revision": "eb8485f5dc4d382a3fc3e7240351ca9c"
   },
   {
     "url": "test.html",
-    "revision": "d83fd46a2b51eed2e993c9da2438550e"
+    "revision": "3499140ebae6846e963b0c2d8650ede1"
   },
   {
     "url": "thanks.html",
-    "revision": "7f590237342624cd06165472ede7fb7c"
+    "revision": "2b76ae45ef7e642be89ab37edc341993"
   },
   {
     "url": "two-sidebar.html",
-    "revision": "46305bdadfb1126af2184bf6c169b3e1"
+    "revision": "081fb35a3802123d9084ba066bd4652d"
   }
 ]);
 workbox.googleAnalytics.initialize();
