@@ -4,7 +4,10 @@ Currently live at [milkenknights.com](https://milkenknights.com)
 
 [![Build Status](https://travis-ci.org/themilkenknights/milkenknightsdotcom.svg?branch=master)](https://travis-ci.org/themilkenknights/milkenknightsdotcom)
 
-## Helpful things to know
+## Helpful things to knowy
+* Install Gulp globally, run `npm i -g gulp`. This is necessary to develop locally. Also run `npm i` after cloning the repo.
+* To open a live updating site preview, run `gulp serve`
+* To run the full compression/minification script for testing, simply run `gulp`
 * Seperate CSS is used for the /robots directory
 * Files ending "-sidebar" are demos
 * This website uses a templating system. All pages are generated with the base found in template.html
