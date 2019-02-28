@@ -485,7 +485,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "live.html",
-    "revision": "da9f0523444748792d0df5b8b26796a9"
+    "revision": "0ceb5c0b4902ec320f2dd6a8741d95c5"
   },
   {
     "url": "media.html",
