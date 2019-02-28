@@ -17,7 +17,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "achievements.html",
-    "revision": "b69d33e0808ef6580a8a537d6b98aa6c"
+    "revision": "9205af8794614b84998ef5bc8265ed23"
   },
   {
     "url": "assets/css/font-awesome.min.css",
@@ -473,7 +473,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "3bfe13f33c04c41c3f6c8cddc4258490"
+    "revision": "33c4ba4947a629d9e10987c6ed0628d2"
   },
   {
     "url": "join.html",
@@ -485,7 +485,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "live.html",
-    "revision": "845879f57d5a54b746d82dd2d4f7bd71"
+    "revision": "da9f0523444748792d0df5b8b26796a9"
   },
   {
     "url": "media.html",
