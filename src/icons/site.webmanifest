@@ -1,6 +1,6 @@
 {
-    "name": "The MilkenKnights",
-    "short_name": "MilkenKnights",
+    "name": "Team 1836: The MilkenKnights",
+    "short_name": "Team 1836: The MilkenKnights",
     "icons": [
         {
             "src": "/images/icons/android-chrome-192x192.png",
@@ -13,9 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#34345c",
+    "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone",
-    "start_url": "/index.html"
-    
+    "display": "standalone"
 }
