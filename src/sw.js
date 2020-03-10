@@ -34,7 +34,7 @@ workbox.routing.registerRoute(
                 // Cache only 20 images
                 maxEntries: 100,
                 // Cache for a maximum of a day
-                maxAgeSeconds: 24 * 60 * 60,
+                maxAgeSeconds: 60 * 60,
             })
         ],
     })
