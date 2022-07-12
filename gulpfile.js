@@ -1,15 +1,15 @@
-var gulp = require('gulp');
-var minifyHtml = require('gulp-minify-html');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var fs = require('fs');
-var webp = require('gulp-webp');
-var template = require('gulp-template-html');
-var browserSync = require('browser-sync').create();
-var superstatic = require('superstatic');
-var workboxBuild = require('workbox-build');
-var cleanCSS = require('gulp-clean-css');
-var image = require('gulp-image');
+import gulp from "gulp";
+import minifyHtml from "gulp-minify-html";
+import uglify from "gulp-uglify";
+import concat from "gulp-concat";
+import fs from "fs";
+import webp from "gulp-webp";
+import template from "gulp-template-html";
+import browserSync from "browser-sync";
+import superstatic from "superstatic";
+import workboxBuild from "workbox-build";
+import cleanCSS from "gulp-clean-css";
+import image from "gulp-image";
 
 
 gulp.task('copy', function () {
