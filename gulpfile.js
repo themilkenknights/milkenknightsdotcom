@@ -13,7 +13,7 @@ import image from "gulp-image";
 
 
 gulp.task('copy', function () {
-  return gulp.src(['src/**/*', '!src/images/**/*', '!src/robots/images/**/*']).
+  return gulp.src(['src/**/*', '!src/images/*', '!src/robots/images/**/*']).
     pipe(gulp.dest('dist'));
 });
 
